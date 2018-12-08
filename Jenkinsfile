@@ -13,6 +13,6 @@ node('linux')
    }   
  stage('Deploy') 
  {    
-   sh 'aws cp /workpspace/java-pipeline/dist/*.jar s3://seid665hw10/'
+  // sh 'aws cp /workpspace/java-pipeline/dist/*.jar s3://seid665hw10/'
  }
 }
