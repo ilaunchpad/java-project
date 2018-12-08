@@ -4,7 +4,7 @@ node('linux')
 {   stage(' Unit Tests') 
  { 
    //sh 'ant -f test.xml -v'
-    sh 'ant -f https://github.com/ilaunchpad/java-project/build.xml -v'
+    sh 'ant -f https://github.com/ilaunchpad/java-project/blob/master/build.xml -v'
    junit 'reports/result.xml'
     
  }   
