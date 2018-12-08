@@ -18,7 +18,7 @@ node('linux')
  {    
   
   //sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://samir-assignment-10'
-   sh 'aws cp /workpspace/java-pipeline/dist/*.jar s3://samir-assignment-10/'
+   sh 'aws s3 cp /workpspace/java-pipeline/dist/*.jar s3://samir-assignment-10/'
   
  }
  stage('Report'){
