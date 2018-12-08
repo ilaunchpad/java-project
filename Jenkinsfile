@@ -3,13 +3,14 @@ properties([pipelineTriggers([githubPush()])])
 node('linux') 
 {   stage(' Unit Tests') 
  { 
-   //sh 'ant -f test.xml -v'
+   sh 'ant test.xml -v'
    //junit 'reports/result.xml'
     
  }   
  stage('Build')
  {   
-   sh'ant -f build.xml -v'  
+  
+   //sh'ant -f build.xml -v'  
    }   
  stage('Deploy') 
  {    
